@@ -1,24 +1,24 @@
 class Route {
-	constructor(app, db) {
-		this.register(app, db)
-		console.log("Registered route " + this.route())
-	}
+  constructor(app, db) {
+    this.register(app, db)
+    console.log("Registered route " + this.route())
+  }
 
-	register(app, db) {
-		console.log("Dummy, not registered.")
-	}
+  register(app, db) {
+    console.log("Dummy, not registered.")
+  }
 
-	route() {
-		return "none"
-	}
+  route() {
+    return "none"
+  }
 
-	version() {
-		return 'latest'
-	}
+  version() {
+    return 'latest'
+  }
 
-	versionedRoute() {
-    	return this.route() + '/' + this.version()
-  	}
+  versionedRoute() {
+    return this.route() + '/' + this.version()
+    }
 }
 
 module.exports = Route
